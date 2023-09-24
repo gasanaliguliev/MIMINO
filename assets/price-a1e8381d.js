@@ -1,0 +1,1 @@
+(()=>{const e={openPriceBtn:document.querySelector("[data-price-open]"),closePriceBtn:document.querySelector("[data-price-close]"),price:document.querySelector("[data-price]")};e.openPriceBtn.addEventListener("click",c),e.closePriceBtn.addEventListener("click",c);function c(){e.price.classList.toggle("is-hidden")}})();

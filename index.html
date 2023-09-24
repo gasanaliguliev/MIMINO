@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="data:image/png;base64,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" sizes="32x32" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIMINO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  
+  
+  <script type="module" crossorigin src="/vanilla-app-template/assets/index-e470996f.js"></script>
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/reset-e81654ad.js">
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/table-modal-two-231d1022.js">
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/room-ecc1eebf.js">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/reset-3d214f1b.css">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/index-424e8594.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header-container">
+      <a href="./index.html" class="header-logo">MIMIHO</a>
+
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a href="./restaurant.html" class="header-nav-link">Ресторан</a
+          ><a href="tel:0955559533" class="header-nav-contacts"
+            ><svg class="header-nav-icon" width="24" height="24">
+              <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-phone-icon"></use>
+            </svg>
+            <span class="header-nav-tel">095 555 95 33</span></a
+          >
+        </li>
+        <li class="header-nav-item">
+          <a href="./hotel.html" class="header-nav-link">Готель</a
+          ><a href="tel:0668491089" class="header-nav-contacts"
+            ><svg class="header-nav-icon" width="24" height="24">
+              <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-phone-icon"></use>
+            </svg>
+            <span class="header-nav-tel">066 849 10 89</span></a
+          >
+        </li>
+      </ul>
+
+      <ul class="header-social-list">
+        <li class="header-social-item">
+          <a href="https://www.instagram.com/" target="_blank" class="header-social-link">
+            <svg class="header-social-icon" width="24" height="24">
+              <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-instagram-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a href="https://uk-ua.facebook.com/" target="_blank" class="header-social-link">
+            <svg class="header-social-icon" width="24" height="24">
+              <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-facebook-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a href="https://web.telegram.org/z/" target="_blank" class="header-social-link">
+            <svg class="header-social-icon" width="24" height="24">
+              <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-telegram-icon"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+        <section class="homepage-hero-section">
+        <div class="home-page-container">
+          <h1 class="hero-title">MIMIHO</h1>
+          <p class="hero-post-title">Ресторанно-готельний комплекс</p>
+          <h2 class="hero-subtitle">СМАК ЖИТТЯ 24/7</h2>
+
+          <div class="hero-group">
+            <a href="https://goo.gl/maps/1Gj1eipYqzHHkmQC6" target="_blank" class="hero-location-link"
+              ><svg class="hero-location-icon" width="20" height="20">
+                <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-map-icon"></use>
+              </svg>
+              Україна, м. Полтава, <br />
+              вул. Маршала Бірюзова, 15
+            </a>
+
+            <div class="hero-button-group">
+              <button type="button" class="hero-button" data-modal-open>
+                Забронювати столик
+              </button>
+              <button type="button" class="hero-button" data-room-open>
+                Забронювати номер
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      
+
+  <section class="homepage-section1">
+  <div class="container-section1 class-overflow">
+    <div class="section1-top-wrap">
+      <h2 class="section1-pre-title">Amet minim mollit non</h2>
+      <h2 class="section1-logo">MIMIHO</h2>
+      <p class="section1-description">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+      <img
+        srcset="/vanilla-app-template/assets/HP-section1-foto1@2x-76b5bc1c.jpg 2x"
+        src="/vanilla-app-template/assets/HP-section1-foto-de7decfb.jpg"
+        alt="room"
+        class="section1-foto1"
+        width="244"
+        height="322"
+      />
+    </div>
+    <div class="section1-bottom-wrap">
+      <div class="wrap-group1-section1">
+        <p class="section1-description2">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <img
+          srcset="/vanilla-app-template/assets/HP-section1-foto2@2x-01d138ae.jpg 2x"
+          src="/vanilla-app-template/assets/HP-section1-foto2-fbe815ee.jpg"
+          alt="restaurant"
+          class="section1-foto2"
+          width="200"
+          height="278"
+        />
+      </div>
+
+      <div class="wrap-group2-section1">
+        <ul class="section1-image-list">
+          <li class="section1-image-item">
+            <img
+              srcset="/vanilla-app-template/assets/HP-section1-foto3@2x-8502fa10.jpg 2x"
+              src="/vanilla-app-template/assets/HP-section1-foto3-49eff773.jpg"
+              alt="photo"
+              class="section1-foto3"
+              width="245"
+              height="245"
+            />
+          </li>
+          <li class="section1-image-item">
+            <img
+              srcset="/vanilla-app-template/assets/HP-section1-foto4@2x-63b8d1ee.jpg 2x"
+              src="/vanilla-app-template/assets/HP-section1-foto4-276845d1.jpg"
+              alt="photo"
+              class="section1-foto4"
+              width="245"
+              height="245"
+            />
+          </li>
+        </ul>
+
+        <div class="section1-arrows">
+          <button type="button" class="section1-button left">
+            <svg class="section1-arrow icon" width="32" height="32">
+              <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-left-arrow-slider"></use>
+            </svg>
+          </button>
+          <button type="button" class="section1-button right">
+            <svg class="section1-arrow icon" width="32" height="32">
+              <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-rigth-arrow-slider"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+<section class="homepage-section2">
+  <div class="container-section2">
+    <h1 class="section2-logo">MIMIHO</h1>
+    <h2 class="section2-post-title">Ресторан</h2>
+    <p class="section2-description">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit.
+    </p>
+
+    <div class="section2-wrap">
+      <div class="section2-btn-group">
+        <button type="button" class="homepage-section2-btn" data-modal-open-two>Забронювати столик</button>
+        <form action="https://vitalik1788.github.io/teamProject-group14/restaurant.html">
+        <button class="homepage-section2-btn">Переглянути меню</button>
+        </form>
+      </div>
+
+      <ul class="section2-img-list">
+        <li class="section2-img-item left">
+          <img
+            srcset="/vanilla-app-template/assets/section2-foto1@2x-0bbaf52d.jpg 2x"
+            src="/vanilla-app-template/assets/section2-foto1-3ecee9d6.jpg"
+            alt="food"
+            class="section2-foto1"
+            width="270"
+            height="270"
+          />
+        </li>
+        <li class="section2-img-item center">
+          <img
+            srcset="/vanilla-app-template/assets/section2-foto2@2x-e3beaaf2.jpg 2x"
+            src="/vanilla-app-template/assets/section2-foto2-b723062c.jpg"
+            alt="food"
+            class="section2-foto2"
+            width="162"
+            height="270"
+          />
+        </li>
+        <li class="section2-img-item right">
+          <img
+            src="/vanilla-app-template/assets/section2-foto3-44404d8a.jpg"
+            alt="food"
+            class="section2-foto3"
+            width="162"
+            height="270"
+          />
+        </li>
+      </ul>
+    </div>
+    <div class="section2-arrows-group">
+      <button type="button" class="slider-section2-btn">
+        <svg class="section2-arrow-icon" width="32" height="32">
+          <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-left-arrow-slider"></use>
+        </svg>
+      </button>
+      <button type="button" class="slider-section2-btn">
+        <svg class="section2-arrow-icon" width="32" height="32">
+          <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-rigth-arrow-slider"></use>
+
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+                                             <!-- MODAL WINDOW -->
+
+<div class="backdrop is-hidden" data-modal-two>
+  <div class="tt-modal">
+
+    <button type="button" class="modal-close" data-modal-close-two>
+      <svg class="close-modal-icon" width="24" height="24">
+        <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-cross-close-modal"></use>
+      </svg>
+    </button>
+
+    <div class="tt-modal-title-wrap">
+      <h1 class="tt-modal-title">
+        ЗАБРОНЮВАТИ СТОЛИК
+      </h1>
+    </div>
+
+    <form class="tt-modal-form">
+
+      <div class="tt-input-wrap">
+        <div class="tt-input-wrap-part">
+          <div class="tt-modal-input-field">
+            <input type="text" class="tt-modal-input" name="name" id="name" required placeholder="Ваше ім’я"
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
+            <label for="name" class="tt-input-label-title">
+              На кого забронювати столик?
+            </label>
+          </div>
+          <div class="tt-modal-input-field">
+            <input type="tel" class="tt-modal-input" name="tel" id="tel" required placeholder="+38 (___) ___-__-__"
+              pattern="[0-9]+" title="please enter number only">
+            <label for="tel" class="tt-input-label-title">
+              Номер телефону
+            </label>
+          </div>
+        </div>
+
+        <div class="tt-input-wrap-part">
+          <div class="tt-modal-input-field">
+            <select id="person" name="person" class="tt-modal-input">
+              <option value="2" class="value" selected>2</option>
+              <option value="3" class="value">3</option>
+              <option value="4" class="value">4</option>
+              <option value="5" class="value">5</option>
+            </select>
+            <label for="person" class="tt-input-label-title">
+              Столик на яку кількість осіб?
+            </label>
+          </div>
+          <div class="tt-modal-input-field">
+            <select id="tt-date" name="tt-date" class="tt-modal-input">
+              <option value="today" class="value" selected>
+                Сьогодні
+              </option>
+            </select>
+            <label for="tt-date" class="tt-input-label-title">
+              На яку дату бронювати?
+            </label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="tt-modal-button">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+
+    </form>
+  </div>
+</div>
+
+
+  <section class="homepage-section3">
+  <div class="container-section3">
+    <div class="section3-top-wrap">
+      <h2 class="section3-pre-title">Amet minim mollit non</h2>
+      <h2 class="section3-logo">MIMIHO</h2>
+      <p class="section3-description">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+      <img srcset="/vanilla-app-template/assets/section3-foto1@2x-5a5a7375.jpg 2x" src="/vanilla-app-template/assets/section3-foto1-799d3190.jpg" alt="room"
+        class="section3-foto1" width="244" height="322" />
+    </div>
+    <div class="section3-bottom-wrap">
+      <div class="wrap-group1">
+        <p class="section3-description2">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet.
+        </p>
+        <img srcset="/vanilla-app-template/assets/section3-foto2@2x-eec6b954.jpg 2x" src="/vanilla-app-template/assets/section3-foto2-ec7cc13a.jpg"
+          alt="restaurant" class="section3-foto2" width="200" height="278" />
+      </div>
+
+      <div class="wrap-group2">
+        <ul class="section3-image-list">
+          <li class="section3-image-item">
+            <img srcset="/vanilla-app-template/assets/section3-foto3@2x-be712dc8.jpg 2x" src="/vanilla-app-template/assets/section3-foto3-f55d403f.jpg"
+              alt="photo" class="section3-foto3" width="245" height="245" />
+          </li>
+          <li class="section3-image-item">
+            <img srcset="/vanilla-app-template/assets/section4-foto4@2x-67507c1d.jpg 2x" src="/vanilla-app-template/assets/section4-foto4-548c2e71.jpg"
+              alt="photo" class="section3-foto4" width="245" height="245" />
+          </li>
+        </ul>
+
+        <div class="section3-arrows">
+          <button type="button" class="section3-button left">
+            <svg class="section3-arrow icon" width="32" height="32">
+              <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-left-arrow-slider"></use>
+            </svg>
+          </button>
+          <button type="button" class="section3-button right">
+            <svg class="section3-arrow icon" width="32" height="32">
+              <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-rigth-arrow-slider"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="homepage-section4">
+  <div class="container-section4">
+    <h1 class="section4-logo">MIMIHO</h1>
+    <h2 class="section4-post-title">Готель</h2>
+    <p class="section4-description">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit.
+    </p>
+
+    <div class="section4-wrap">
+      <div class="section4-btn-group">
+        <button type="button" class="homepage-section4-btn" data-price-open-two>Забронювати номер</button>
+        <form action="https://vitalik1788.github.io/teamProject-group14/hotel.html">        
+        <button class="homepage-section4-btn">Переглянути ціни</button> 
+        </form>       
+      </div>
+
+      <ul class="section4-img-list">
+        <li class="section4-img-item left">
+          <img srcset="/vanilla-app-template/assets/section4-foto1@2x-0c6a0f5b.jpg 2x" src="/vanilla-app-template/assets/section4-foto1-0c8d5216.jpg"
+            alt="food" class="section4-foto1" width="270" height="270" />
+        </li>
+        <li class="section4-img-item center">
+          <img srcset="/vanilla-app-template/assets/section4-foto2@2x-f8a28cbc.jpg 2x" src="/vanilla-app-template/assets/section4-foto2-1c5d480f.jpg"
+            alt="food" class="section4-foto2" width="162" height="270" />
+        </li>
+        <li class="section4-img-item right">
+          <img srcset="/vanilla-app-template/assets/section4-foto3@2x-a7fd582b.jpg 2x" src="/vanilla-app-template/assets/section4-foto3-7e676db6.jpg"
+            alt="food" class="section4-foto3" width="162" height="270" />
+        </li>
+      </ul>
+    </div>
+    <div class="section4-arrows-group">
+      <button type="button" class="slider-section4-btn">
+        <svg class="section4-arrow-icon" width="32" height="32">
+          <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-left-arrow-slider"></use>
+        </svg>
+      </button>
+      <button type="button" class="slider-section4-btn">
+        <svg class="section4-arrow-icon" width="32" height="32">
+          <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-rigth-arrow-slider"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- MODAL WINDOW  -->
+
+<div class="backdrop is-hidden" data-price-two>
+  <div class="tt-modal">
+    <button type="button" class="modal-close" data-price-close-two>
+      <svg class="close-modal-icon" width="24" height="24">
+        <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-cross-close-modal"></use>
+      </svg>
+    </button>
+
+    <div class="tt-modal-title-wrap">
+      <h1 class="tt-modal-title">
+        ЗАБРОНЮВАТИ НОМЕР
+      </h1>
+    </div>
+
+    <form class="tt-modal-form">
+
+      <div class="tr-input-wrap">
+        <div class="tr-input-wrap-one">
+          <div class="tr-modal-input-field">
+            <input type="text" class="tt-modal-input" name="name" id="r-name" required placeholder="Ваше ім’я"
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
+            <label for="r-name" class="tt-input-label-title">
+              На кого забронювати номер?
+            </label>
+          </div>
+          <div class="tr-modal-input-field">
+            <input type="tel" class="tt-modal-input" name="tel" id="r-tel" required placeholder="+38 (___) ___-__-__"
+              pattern="[0-9]+" title="please enter number only">
+            <label for="r-tel" class="tt-input-label-title">
+              Номер телефону
+            </label>
+          </div>
+        </div>
+
+        <div class="tr-input-wrap-two">
+          <div class="tr-modal-input-field">
+            <select id="r-person" name="person" class="tt-modal-input">
+              <option value="2" class="value" selected>
+                Двомісний люкс
+              </option>
+              <option value="3" class="value">
+                Тримісний люкс
+              </option>
+            </select>
+            <label for="r-person" class="tt-input-label-title">
+              Категорія номеру
+            </label>
+          </div>
+        </div>
+
+        <div class="tr-input-wrap-three">
+          <div class="tr-modal-input-field">
+            <select id="tr-date" name="tt-date" class="tt-modal-input">
+              <option value="today" class="value" selected>
+                Сьогодні
+              </option>
+            </select>
+            <label for="tr-date" class="tt-input-label-title">
+              Дата заїзду
+            </label>
+          </div>
+          <div class="tr-modal-input-field">
+            <select id="rr-date" name="tt-date" class="tt-modal-input">
+              <option value="today" class="value" selected>
+                Сьогодні
+              </option>
+            </select>
+            <label for="rr-date" class="tt-input-label-title">
+              Дата виїзду
+            </label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="tt-modal-button">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
+
+  <section class="location">
+  <div class="location-container">
+    <div class="location-tablet-wrapper">
+      <div class="tablet-contacts-wrapper">
+        <h2 class="location-visually-hidden">
+          Інформація про розміщення комплексу та номера телефонів
+        </h2>
+        <p class="location-mimino">MIMIHO</p>
+
+        <!------------------ RESTAURANT--------------------- -->
+        <p class="location-sentense">Ресторанно-готельний комплекс</p>
+        <div class="location-restaurant-wrapper">
+          <p class="location-restaurant">Ресторан</p>
+          <div class="location-restaurant-div">
+            <svg class="location-restaurant-icon" width="12" height="20">
+              <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-phone-icon"></use>
+            </svg>
+            <a class="location-restaurant-number" href="tel:0955559533">095 555 95 33</a>
+          </div>
+        </div>
+
+        <!-----------------  HOTEL----------------------- -->
+        <div class="location-hotel-wrapper">
+          <p class="location-hotel">Готель</p>
+          <div class="location-hotel-div">
+            <svg class="location-hotel-icon" width="12" height="20">
+              <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-phone-icon"></use>
+            </svg>
+            <a class="location-hotel-number-one" href="tel:0668491089">066 849 10 89</a>
+            <a class="location-hotel-number-two" href="tel:0672758540">067 275 85 40</a>
+          </div>
+        </div>
+
+        <!------------------------- MAP---------------- -->
+        <div class="location-map-div">
+          <a href="https://goo.gl/maps/1Gj1eipYqzHHkmQC6" target="_blank" class="section-map-link">
+            <svg class="location-map-icon" width="20" height="20">
+              <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-map-icon"></use>
+            </svg>
+            <p class="location-address">
+              Україна, м. Полтава, <br> вул. Маршала Бірюзова, 15
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe class="iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90607.51430824776!2d34.507602306789394!3d49.557361849463916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82601f3347a5f%3A0x36f3f9aeec44a6a!2z0YPQuy4g0JzQsNGA0YjQsNC70LAg0JHQuNGA0Y7Qt9C-0LLQsCwgMTUsINCf0L7Qu9GC0LDQstCwLCDQn9C-0LvRgtCw0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMzYwMDA!5e1!3m2!1sru!2sua!4v1676567345783!5m2!1sru!2sua"
+          loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+  <div class="container-footer">
+    <div class="footer-bloc">
+      <h2 class="footer-logo">
+        <a href="./index.html" class="footer-logo-link link">MIMIHO</a>
+      </h2>
+      <div class="footer-bloc-wrap">
+        <!-- <div class="footer-site-navigation"> -->
+          <ul class="footer-list list">
+            <li class="footer-item">
+              <a href="./index.html" class="footer-link link">Головна</a>
+            </li>
+            <li class="footer-item">
+              <a href="./restaurant.html" class="footer-link link">Ресторан</a>
+            </li>
+            <li class="footer-item">
+              <a href="./hotel.html" class="footer-link link">Готель</a>
+            </li>
+          </ul>
+        <!-- </div> -->
+        <div class="footer-soc-bloc">
+          <ul class="footer-soc-list list">
+            <li class="footer-soc-item">
+              <a href="https://www.instagram.com/" target="_blank" class="footer-soc-link link">
+                <span class="footer-soc-text">Instagram</span>
+                <svg class="footer-soc-icon" width="24px" height="24px">
+                  <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-instagram-icon"></use>
+                </svg></a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="https://uk-ua.facebook.com/" target="_blank" class="footer-soc-link link">
+                <span class="footer-soc-text">Facebook</span>
+                <svg class="footer-soc-icon" width="24px" height="24px">
+                  <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-facebook-icon"></use>
+                </svg></a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="https://web.telegram.org/z/" target="_blank" class="footer-soc-link link">
+                <span class="footer-soc-text">Telegram</span>
+                <svg class="footer-soc-icon" width="24px" height="24px">
+                  <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-telegram-icon"></use>
+                </svg></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- МОДАЛКА ДЛЯ БРОНИРОВАНИЯ СТОЛИКА -->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="tt-modal">
+
+    <button type="button" class="modal-close" data-modal-close>
+      <svg class="close-modal-icon" width="24" height="24">
+        <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-cross-close-modal"></use>
+      </svg>
+    </button>
+
+    <div class="tt-modal-title-wrap">
+      <h1 class="tt-modal-title">
+        ЗАБРОНЮВАТИ СТОЛИК
+      </h1>
+    </div>
+
+    <form class="tt-modal-form">
+
+      <div class="tt-input-wrap">
+        <div class="tt-input-wrap-part">
+          <div class="tt-modal-input-field">
+            <input type="text" class="tt-modal-input" name="name" id="name" required placeholder="Ваше ім’я"
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
+            <label for="name" class="tt-input-label-title">
+              На кого забронювати столик?
+            </label>
+          </div>
+          <div class="tt-modal-input-field">
+            <input type="tel" class="tt-modal-input" name="tel" id="tel" required placeholder="+38 (___) ___-__-__"
+              pattern="[0-9]+" title="please enter number only">
+            <label for="tel" class="tt-input-label-title">
+              Номер телефону
+            </label>
+          </div>
+        </div>
+
+        <div class="tt-input-wrap-part">
+          <div class="tt-modal-input-field">
+            <select id="person" name="person" class="tt-modal-input">
+              <option value="2" class="value" selected>2</option>
+              <option value="3" class="value">3</option>
+              <option value="4" class="value">4</option>
+              <option value="5" class="value">5</option>
+            </select>
+            <label for="person" class="tt-input-label-title">
+              Столик на яку кількість осіб?
+            </label>
+          </div>
+          <div class="tt-modal-input-field">
+            <select id="tt-date" name="tt-date" class="tt-modal-input">
+              <option value="today" class="value" selected>
+                Сьогодні
+              </option>
+            </select>
+            <label for="tt-date" class="tt-input-label-title">
+              На яку дату бронювати?
+            </label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="tt-modal-button">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+
+    </form>
+  </div>
+</div>
+
+  <!-- МОДАЛКА БРОНЮВАННЯ НОМЕРУ -->
+
+<div class="backdrop is-hidden" data-room>
+  <div class="tt-modal">
+    <button type="button" class="modal-close" data-room-close>
+      <svg class="close-modal-icon" width="24" height="24">
+        <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-cross-close-modal"></use>
+      </svg>
+    </button>
+
+    <div class="tt-modal-title-wrap">
+      <h1 class="tt-modal-title">
+        ЗАБРОНЮВАТИ НОМЕР
+      </h1>
+    </div>
+
+    <form class="tt-modal-form">
+
+      <div class="tr-input-wrap">
+        <div class="tr-input-wrap-one">
+          <div class="tr-modal-input-field">
+            <input type="text" class="tt-modal-input" name="name" id="r-name" required placeholder="Ваше ім’я"
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
+            <label for="r-name" class="tt-input-label-title">
+              На кого забронювати номер?
+            </label>
+          </div>
+          <div class="tr-modal-input-field">
+            <input type="tel" class="tt-modal-input" name="tel" id="r-tel" required placeholder="+38 (___) ___-__-__"
+              pattern="[0-9]+" title="please enter number only">
+            <label for="r-tel" class="tt-input-label-title">
+              Номер телефону
+            </label>
+          </div>
+        </div>
+
+        <div class="tr-input-wrap-two">
+          <div class="tr-modal-input-field">
+            <select id="r-person" name="person" class="tt-modal-input">
+              <option value="2" class="value" selected>
+                Двомісний люкс
+              </option>
+              <option value="3" class="value">
+                Тримісний люкс
+              </option>
+            </select>
+            <label for="r-person" class="tt-input-label-title">
+              Категорія номеру
+            </label>
+          </div>
+        </div>
+
+        <div class="tr-input-wrap-three">
+          <div class="tr-modal-input-field">
+            <select id="tr-date" name="tt-date" class="tt-modal-input">
+              <option value="today" class="value" selected>
+                Сьогодні
+              </option>
+            </select>
+            <label for="tr-date" class="tt-input-label-title">
+              Дата заїзду
+            </label>
+          </div>
+          <div class="tr-modal-input-field">
+            <select id="rr-date" name="tt-date" class="tt-modal-input">
+              <option value="today" class="value" selected>
+                Сьогодні
+              </option>
+            </select>
+            <label for="rr-date" class="tt-input-label-title">
+              Дата виїзду
+            </label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="tt-modal-button">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>  
+
+  
+  
+
+  
+
+  
+
+   
+
+  
+</body>
+
+</html>

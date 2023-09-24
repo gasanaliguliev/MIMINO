@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="data:image/png;base64,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" sizes="32x32" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIMINO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  
+  
+  <script type="module" crossorigin src="/vanilla-app-template/assets/reset-e81654ad.js"></script>
+  <script type="module" crossorigin src="/vanilla-app-template/assets/price-a1e8381d.js"></script>
+  <script type="module" crossorigin src="/vanilla-app-template/assets/room-ecc1eebf.js"></script>
+  <link rel="stylesheet" href="/vanilla-app-template/assets/reset-3d214f1b.css">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/room-4ba0f5f7.css">
+</head>
+
+<body>
+
+  <header class="room-site-header">
+  <div class="room-header-container">
+    <a href="./index.html" class="header-logo">MIMIHO</a>
+
+    <ul class="room-nav-list">
+      <li class="room-nav-item">
+        <a href="./restaurant.html" class="room-nav-link">Ресторан</a
+        ><a href="tel:0955559533" class="room-nav-contacts"
+          ><svg class="room-nav-icon" width="24" height="24">
+            <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-phone-icon"></use>
+          </svg>
+          <span class="room-nav-tel">095 555 95 33</span></a
+        >
+      </li>
+      <li class="room-nav-item">
+        <a href="./hotel.html" class="room-nav-link">Готель</a
+        ><a href="tel:0668491089" class="room-nav-contacts"
+          ><svg class="room-nav-icon" width="24" height="24">
+            <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-phone-icon"></use>
+          </svg>
+          <span class="room-nav-tel">066 849 10 89</span></a
+        >
+      </li>
+    </ul>
+
+    <ul class="room-social-list">
+      <li class="room-social-item">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          class="room-social-link"
+        >
+          <svg class="room-social-icon" width="24" height="24">
+            <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-instagram-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="room-social-item">
+        <a
+          href="https://uk-ua.facebook.com/"
+          target="_blank"
+          class="room-social-link"
+        >
+          <svg class="room-social-icon" width="24" height="24">
+            <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-facebook-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="room-social-item">
+        <a
+          href="https://web.telegram.org/z/"
+          target="_blank"
+          class="room-social-link"
+        >
+          <svg class="room-social-icon" width="24" height="24">
+            <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-telegram-icon"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+  <section class="roompage-hero-section">
+  <div class="roompage-container">
+    <h1 class="roompage-hero-title">ДВОМІСНИЙ НОМЕР люкс</h1>
+    <p class="roompage-post-title">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+
+    <div class="roompage-hero-group">
+      <a
+        href="https://goo.gl/maps/1Gj1eipYqzHHkmQC6"
+        target="_blank"
+        class="roompage-location-link"
+        ><svg class="roompage-location-icon" width="20" height="20">
+          <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-map-icon"></use>
+        </svg>
+        Україна, м. Полтава, <br />
+        вул. Маршала Бірюзова, 15
+      </a>
+
+      <div class="roompage-button-group">
+        <button type="button" class="roompage-hero-button" data-price-open>
+          Переглянути ціни
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="room-arrow-buttons roompage-container">
+    <div class="room-arrow-left">
+      <button type="button" class="room-arrow-button">
+        <svg class="room-arrow-icon" width="40" height="40">
+          <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-left-gold-arrow"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="room-arrow-right">
+      <button type="button" class="room-arrow-button">
+        <svg class="room-arrow-icon" width="40" height="40">
+          <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-rigth-gold-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+  <section class="doublelux dl-container">
+  <div class="dl-comfort ">
+    <h2 class="dl-sec-heaher">ЗРУЧНОСТІ У НОМЕРІ</h2>
+    <p class="dl-comfort-text">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+      sint. Velit officia consequat duis enim velit mollit. Exercitation
+      veniam consequat sunt nostrud amet.
+    </p>
+    <div>
+      <h3 class="dl-thirdheader">ЗАГАЛЬНІ</h3>
+      <div class="dl-boxes">
+        <p class="dl-maintext">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet.
+        </p>
+        <p class="dl-maintext">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+    </div>
+    <div class="dl-about">
+      <h3 class="dl-thirdheader">ВАННА КІМНАТА</h3>
+      <div class="dl-boxes">
+        <p class="dl-maintext">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet.
+        </p>
+        <p class="dl-maintext">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          amet sint. Velit officia consequat duis enim velit mollit.
+          Exercitation veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+    </div>
+    <div class="dl-about">
+      <h3 class="dl-thirdheader">СПАЛЬНЯ</h3>
+      <div class="dl-boxes">
+        <p class="dl-maintext">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          amet sint.
+        </p>
+      </div>
+    </div>
+    <div class="dl-about">
+      <h3 class="dl-thirdheader">КУХНЯ</h3>
+      <div class="dl-boxes">
+        <p class="dl-maintext">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          amet sint.
+        </p>
+        <p class="dl-maintext">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          amet sint.
+        </p>
+      </div>
+    </div>
+    <div class="dl-about">
+      <h3 class="dl-thirdheader">МЕДІА</h3>
+      <div class="dl-boxes">
+        <p class="dl-maintext">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+          amet sint. Velit officia consequat duis enim velit mollit.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="dl-order-wrapper"> -->
+    <button type="button" class="dl-roomorder-btn" data-room-open>
+      ОФОРМИТИ БРОНЮВАННЯ
+    </button>
+    <a class="link dl-back-link" href="./hotel.html">Повернутися до перегляду номерів
+      <svg class="last-link">
+        <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-arrow-disabled-rigth" class="arrow-disabled"></use>
+      </svg>
+    </a>
+  <!-- </div> -->
+</section>
+  <footer class="footer">
+  <div class="container-footer">
+    <div class="footer-bloc">
+      <h2 class="footer-logo">
+        <a href="./index.html" class="footer-logo-link link">MIMIHO</a>
+      </h2>
+      <div class="footer-bloc-wrap">
+        <!-- <div class="footer-site-navigation"> -->
+          <ul class="footer-list list">
+            <li class="footer-item">
+              <a href="./index.html" class="footer-link link">Головна</a>
+            </li>
+            <li class="footer-item">
+              <a href="./restaurant.html" class="footer-link link">Ресторан</a>
+            </li>
+            <li class="footer-item">
+              <a href="./hotel.html" class="footer-link link">Готель</a>
+            </li>
+          </ul>
+        <!-- </div> -->
+        <div class="footer-soc-bloc">
+          <ul class="footer-soc-list list">
+            <li class="footer-soc-item">
+              <a href="https://www.instagram.com/" target="_blank" class="footer-soc-link link">
+                <span class="footer-soc-text">Instagram</span>
+                <svg class="footer-soc-icon" width="24px" height="24px">
+                  <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-instagram-icon"></use>
+                </svg></a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="https://uk-ua.facebook.com/" target="_blank" class="footer-soc-link link">
+                <span class="footer-soc-text">Facebook</span>
+                <svg class="footer-soc-icon" width="24px" height="24px">
+                  <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-facebook-icon"></use>
+                </svg></a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="https://web.telegram.org/z/" target="_blank" class="footer-soc-link link">
+                <span class="footer-soc-text">Telegram</span>
+                <svg class="footer-soc-icon" width="24px" height="24px">
+                  <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-telegram-icon"></use>
+                </svg></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- PRICE -->
+<div class="backdrop is-hidden" data-price>
+  <div class="tt-modal">
+
+    <button type="button" class="modal-close" data-price-close>
+      <svg class="close-modal-icon" width="24" height="24">
+        <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-cross-close-modal"></use>
+      </svg>
+    </button>
+
+    <div class="tt-modal-title-wrap">
+      <h1 class="tt-modal-title">
+        ЦІНИ НА НОМЕР
+      </h1>
+    </div>
+
+    <div class="tp-modal-title-wrap">
+      <p class="tp-modal-title">Двомісний люкс</p>
+    </div>
+
+    <div class="tp-modal-title-price">
+      <p class="tp-modal-price">Категорія номеру</p>
+    </div>
+
+    <form class="tt-modal-form">
+      <div class="tp-input-wrap">
+        <div class="tp-modal-input-field">
+          <select id="night" name="night" class="tt-modal-input">
+            <option value="1" class="value" selected>2</option>
+            <option value="2" class="value">3</option>
+            <option value="3" class="value">4</option>
+            <option value="4" class="value">5</option>
+          </select>
+          <label for="night" class="tt-input-label-title">
+            Кількість ночей
+          </label>
+        </div>
+        <div class="tp-modal-input-field">
+          <select id="price" name="tt-date" class="tt-modal-input">
+            <option value="today" class="value" selected>
+              1000
+            </option>
+          </select>
+          <label for="price" class="tt-input-label-title">
+            грн
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="tt-modal-button">
+        ЗАБРОНЮВАТИ НОМЕР
+      </button>
+    </form>
+  </div>
+</div>
+
+
+  <!-- МОДАЛКА БРОНЮВАННЯ НОМЕРУ -->
+
+<div class="backdrop is-hidden" data-room>
+  <div class="tt-modal">
+    <button type="button" class="modal-close" data-room-close>
+      <svg class="close-modal-icon" width="24" height="24">
+        <use href="/vanilla-app-template/assets/icons-sprite-c79ca1fb.svg#icon-cross-close-modal"></use>
+      </svg>
+    </button>
+
+    <div class="tt-modal-title-wrap">
+      <h1 class="tt-modal-title">
+        ЗАБРОНЮВАТИ НОМЕР
+      </h1>
+    </div>
+
+    <form class="tt-modal-form">
+
+      <div class="tr-input-wrap">
+        <div class="tr-input-wrap-one">
+          <div class="tr-modal-input-field">
+            <input type="text" class="tt-modal-input" name="name" id="r-name" required placeholder="Ваше ім’я"
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
+            <label for="r-name" class="tt-input-label-title">
+              На кого забронювати номер?
+            </label>
+          </div>
+          <div class="tr-modal-input-field">
+            <input type="tel" class="tt-modal-input" name="tel" id="r-tel" required placeholder="+38 (___) ___-__-__"
+              pattern="[0-9]+" title="please enter number only">
+            <label for="r-tel" class="tt-input-label-title">
+              Номер телефону
+            </label>
+          </div>
+        </div>
+
+        <div class="tr-input-wrap-two">
+          <div class="tr-modal-input-field">
+            <select id="r-person" name="person" class="tt-modal-input">
+              <option value="2" class="value" selected>
+                Двомісний люкс
+              </option>
+              <option value="3" class="value">
+                Тримісний люкс
+              </option>
+            </select>
+            <label for="r-person" class="tt-input-label-title">
+              Категорія номеру
+            </label>
+          </div>
+        </div>
+
+        <div class="tr-input-wrap-three">
+          <div class="tr-modal-input-field">
+            <select id="tr-date" name="tt-date" class="tt-modal-input">
+              <option value="today" class="value" selected>
+                Сьогодні
+              </option>
+            </select>
+            <label for="tr-date" class="tt-input-label-title">
+              Дата заїзду
+            </label>
+          </div>
+          <div class="tr-modal-input-field">
+            <select id="rr-date" name="tt-date" class="tt-modal-input">
+              <option value="today" class="value" selected>
+                Сьогодні
+              </option>
+            </select>
+            <label for="rr-date" class="tt-input-label-title">
+              Дата виїзду
+            </label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="tt-modal-button">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>
+  
+  
+  
+  
+  
+</body>
+
+</html>
