@@ -1,0 +1,205 @@
+
+.location {
+
+    background-color: #FFFDEE;
+    padding-top: 36px;
+    padding-bottom: 32px;
+}
+
+.section-map-link {
+    display: flex;
+    align-items: center;
+}
+
+.location-mimino {
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: #494848;
+    margin-bottom: 12px;
+
+}
+
+.location-sentense {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #7A7A7A;
+}
+
+.location-restaurant {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #C79002;
+    margin-bottom: 0px;
+    min-width: 124px;
+}
+
+.location-hotel {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #C79002;
+    margin-bottom: 0px;
+    min-width: 124px;
+}
+
+.location-restaurant-number {
+    font-family: 'Montserrat', sans-serif;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    color: #494848;
+}
+
+.location-hotel-number-one {
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    color: #494848;
+    margin-right: 8px;
+
+
+}
+
+.location-hotel-number-two {
+    font-family: 'Montserrat', sans-serif;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    color: #494848;
+}
+
+.location-address {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+
+    color: #494848;
+}
+
+
+
+.location-restaurant-div {
+    display: flex;
+
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    padding-top: 11px;
+    padding-left: 14px;
+    padding-bottom: 9px;
+    padding-right: 8px;
+}
+
+.location-hotel-div {
+    background-color: #FFFFFF;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    padding-top: 11px;
+    padding-left: 14px;
+    padding-bottom: 9px;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+.location-map-div {
+    display: flex;
+
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 33px;
+    background-color: #FFFFFF;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-bottom: 32px;
+}
+
+
+
+.location-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.location-restaurant-wrapper {
+
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+
+
+}
+
+.location-hotel-wrapper {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+
+}
+
+
+
+
+
+
+.location-restaurant-icon {
+
+    margin-right: 14px;
+}
+
+
+.location-hotel-icon {
+    margin-right: 14px;
+}
+
+.location-map-icon {
+    margin-right: 16px;
+}
+
+.iframe {
+    width: 100%;
+    height: 220px;
+}

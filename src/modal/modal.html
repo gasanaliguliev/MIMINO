@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/modal.css">
+</head>
+
+<body>
+
+  <!-- КНОПКИ ДЛЯ ПРИКЛАДУ ВІДКРИТТЯ, не потрібні -->
+  <div class="example">
+    <button class="tt-button" type="button" data-modal-open>ЗАБРОНЮВАТИ СТОЛИК</button>
+    <button class="tt-button" type="button" data-room-open>Забронювати номер</button>
+    <button class="tt-button" type="button" data-price-open>Переглянути ціни</button>
+  </div>
+
+  <!-- МОДАЛКА БРОНЮВАННЯ СТОЛИКА (додавайте) -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="tt-modal">
+
+      <button type="button" class="modal-close" data-modal-close>
+        <svg class="close-modal-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-cross-close-modal"></use>
+        </svg>
+      </button>
+
+      <div class="tt-modal-title-wrap">
+        <h1 class="tt-modal-title">
+          ЗАБРОНЮВАТИ СТОЛИК
+        </h1>
+      </div>
+
+      <form class="tt-modal-form">
+
+        <div class="tt-input-wrap">
+          <div class="tt-input-wrap-part">
+            <div class="tt-modal-input-field">
+              <input type="text" class="tt-modal-input" name="name" id="name" required placeholder="Ваше ім’я"
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
+              <label for="name" class="tt-input-label-title">
+                На кого забронювати столик?
+              </label>
+            </div>
+            <div class="tt-modal-input-field">
+              <input type="tel" class="tt-modal-input" name="tel" id="tel" required placeholder="+38 (___) ___-__-__"
+                pattern="[0-9]+" title="please enter number only">
+              <label for="tel" class="tt-input-label-title">
+                Номер телефону
+              </label>
+            </div>
+          </div>
+
+          <div class="tt-input-wrap-part">
+            <div class="tt-modal-input-field">
+              <select id="person" name="person" class="tt-modal-input">
+                <option value="2" class="value" selected>2</option>
+                <option value="3" class="value">3</option>
+                <option value="4" class="value">4</option>
+                <option value="5" class="value">5</option>
+              </select>
+              <label for="person" class="tt-input-label-title">
+                Столик на яку кількість осіб?
+              </label>
+            </div>
+            <div class="tt-modal-input-field">
+              <select id="tt-date" name="tt-date" class="tt-modal-input">
+                <option value="today" class="value" selected>
+                  Сьогодні
+                </option>
+              </select>
+              <label for="tt-date" class="tt-input-label-title">
+                На яку дату бронювати?
+              </label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="tt-modal-button">
+          ОФОРМИТИ БРОНЮВАННЯ
+        </button>
+
+      </form>
+    </div>
+  </div>
+  <!-- МОДАЛКА БРОНЮВАННЯ НОМЕРУ -->
+
+  <div class="backdrop is-hidden" data-room>
+    <div class="tt-modal">
+      <button type="button" class="modal-close" data-room-close>
+        <svg class="close-modal-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-cross-close-modal"></use>
+        </svg>
+      </button>
+
+      <div class="tt-modal-title-wrap">
+        <h1 class="tt-modal-title">
+          ЗАБРОНЮВАТИ НОМЕР
+        </h1>
+      </div>
+
+      <form class="tt-modal-form">
+
+        <div class="tr-input-wrap">
+          <div class="tr-input-wrap-one">
+            <div class="tr-modal-input-field">
+              <input type="text" class="tt-modal-input" name="name" id="r-name" required placeholder="Ваше ім’я"
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
+              <label for="r-name" class="tt-input-label-title">
+                На кого забронювати номер?
+              </label>
+            </div>
+            <div class="tr-modal-input-field">
+              <input type="tel" class="tt-modal-input" name="tel" id="r-tel" required placeholder="+38 (___) ___-__-__"
+                pattern="[0-9]+" title="please enter number only">
+              <label for="r-tel" class="tt-input-label-title">
+                Номер телефону
+              </label>
+            </div>
+          </div>
+
+          <div class="tr-input-wrap-two">
+            <div class="tr-modal-input-field">
+              <select id="r-person" name="person" class="tt-modal-input">
+                <option value="2" class="value" selected>
+                  Двомісний люкс
+                </option>
+                <option value="3" class="value">
+                  Тримісний люкс
+                </option>
+              </select>
+              <label for="r-person" class="tt-input-label-title">
+                Категорія номеру
+              </label>
+            </div>
+          </div>
+
+          <div class="tr-input-wrap-three">
+            <div class="tr-modal-input-field">
+              <select id="tr-date" name="tt-date" class="tt-modal-input">
+                <option value="today" class="value" selected>
+                  Сьогодні
+                </option>
+              </select>
+              <label for="tr-date" class="tt-input-label-title">
+                Дата заїзду
+              </label>
+            </div>
+            <div class="tr-modal-input-field">
+              <select id="rr-date" name="tt-date" class="tt-modal-input">
+                <option value="today" class="value" selected>
+                  Сьогодні
+                </option>
+              </select>
+              <label for="rr-date" class="tt-input-label-title">
+                Дата виїзду
+              </label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="tt-modal-button">
+          ОФОРМИТИ БРОНЮВАННЯ
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- PRICE -->
+  <div class="backdrop is-hidden" data-price>
+    <div class="tt-modal">
+
+      <button type="button" class="modal-close" data-price-close>
+        <svg class="close-modal-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-cross-close-modal"></use>
+        </svg>
+      </button>
+
+      <div class="tt-modal-title-wrap">
+        <h1 class="tt-modal-title">
+          ЦІНИ НА НОМЕР
+        </h1>
+      </div>
+
+      <div class="tp-modal-title-wrap">
+        <p class="tp-modal-title">Двомісний люкс</p>
+      </div>
+
+      <div class="tp-modal-title-price">
+        <p class="tp-modal-price">Категорія номеру</p>
+      </div>
+
+      <form class="tt-modal-form">
+        <div class="tp-input-wrap">
+          <div class="tp-modal-input-field">
+            <select id="night" name="night" class="tt-modal-input">
+              <option value="1" class="value" selected>2</option>
+              <option value="2" class="value">3</option>
+              <option value="3" class="value">4</option>
+              <option value="4" class="value">5</option>
+            </select>
+            <label for="night" class="tt-input-label-title">
+              Кількість ночей
+            </label>
+          </div>
+          <div class="tp-modal-input-field">
+            <select id="price" name="tt-date" class="tt-modal-input">
+              <option value="today" class="value" selected>
+                1000
+              </option>
+            </select>
+            <label for="price" class="tt-input-label-title">
+              грн
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="tt-modal-button">
+          ЗАБРОНЮВАТИ НОМЕР
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- СКРІПТИ ВІДКРИВАННЯ І ЗАКРИВАННЯ МОДАЛКИ -->
+  <script src="./js/modal.js"></script>
+  <script src="./js/room.js"></script>
+  <script src="./js/price.js"></script>
+</body>
+
+</html>

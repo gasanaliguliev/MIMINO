@@ -1,0 +1,170 @@
+@media screen and (min-width:1024px) {
+    .location {
+
+        background-color: #FFFDEE;
+        padding-top: 69px;
+        padding-bottom: 40px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .location-container {
+        width: 960px;
+
+    }
+
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .location-mimino {
+        font-family: 'Film P3';
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.07;
+        letter-spacing: 0.3em;
+        color: #494848;
+        margin-bottom: 8px;
+
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .location-tablet-wrapper {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .location-restaurant-wrapper {
+        display: block;
+        margin-bottom: 24px;
+        align-items: center;
+        width: 150px;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    .location-restaurant-div {
+        min-width: 146px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .location-hotel-wrapper {
+        display: block;
+
+        align-items: center;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .location-restaurant {
+
+        margin-bottom: 8px;
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .iframe {
+
+        width: 535px;
+        height: 412px;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .location-hotel {
+
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .location-sentense {
+
+        margin-bottom: 52px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .map {
+
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .location-map-div {
+        display: flex;
+        align-items: center;
+        width: 284px;
+
+        padding-top: 9px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        padding-right: 8px;
+        background-color: #FFFFFF;
+        border: 0.5px solid #F3C653;
+        border-radius: 2px;
+        margin-left: auto;
+        margin-bottom: 32px;
+
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .location-hotel-div {
+        background-color: #FFFFFF;
+        border: 0.5px solid #F3C653;
+        border-radius: 2px;
+        padding-top: 9px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        padding-right: 8px;
+        display: flex;
+        align-items: center;
+        width: 270px;
+        margin-bottom: 48px;
+        justify-content: center;
+
+
+    }
+}

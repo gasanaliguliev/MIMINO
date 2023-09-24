@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/location.css" />
+    <link rel="stylesheet" href="../css/locationmobile.css" />
+    <link rel="stylesheet" href="../css/locationtablet.css" />
+    <link rel="stylesheet" href="../css/locationdesctop.css" />
+  </head>
+  <body>
+    <!-- SECTION BEGiNNING -->
+    <section class="location">
+      <div class="location-container">
+        <div class="location-tablet-wrapper">
+          <div class="tablet-contacts-wrapper">
+            <h2 class="location-visually-hidden">
+              Інформація про розміщення комплексу та номера телефонів
+            </h2>
+            <p class="location-mimino">mimino</p>
+
+            <!------------------ RESTAURANT--------------------- -->
+            <p class="location-sentense">Ресторанно-готельний комплекс</p>
+            <div class="location-restaurant-wrapper">
+              <p class="location-restaurant">Ресторан</p>
+              <div class="location-restaurant-div">
+                <svg class="location-restaurant-icon" width="12" height="20">
+                  <use href="../img/icons-sprite.svg#icon-phone-icon"></use>
+                </svg>
+                <a class="location-restaurant-number" href="tel:095 555 95 33"
+                  >095 555 95 33</a
+                >
+              </div>
+            </div>
+
+            <!-----------------  HOTEL----------------------- -->
+            <div class="location-hotel-wrapper">
+              <p class="location-hotel">Готель</p>
+              <div class="location-hotel-div">
+                <svg class="location-hotel-icon" width="12" height="20">
+                  <use href="../img/icons-sprite.svg#icon-phone-icon"></use>
+                </svg>
+                <a class="location-hotel-number-one" href="tel:066 849 10 89"
+                  >066 849 10 89</a
+                >
+                <a class="location-hotel-number-two" href="tel:067 275 85 40"
+                  >067 275 85 40</a
+                >
+              </div>
+            </div>
+
+            <!------------------------- MAP---------------- -->
+            <div class="location-map-div">
+              <svg class="location-map-icon" width="20" height="20">
+                <use href="../img/icons-sprite.svg#icon-map-icon"></use>
+              </svg>
+              <p class="location-address">
+                Україна, м. Полтава, вул. Маршала Бірюзова, 15
+              </p>
+            </div>
+          </div>
+          <div class="map">
+            <iframe
+              class="iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90607.51430824776!2d34.507602306789394!3d49.557361849463916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82601f3347a5f%3A0x36f3f9aeec44a6a!2z0YPQuy4g0JzQsNGA0YjQsNC70LAg0JHQuNGA0Y7Qt9C-0LLQsCwgMTUsINCf0L7Qu9GC0LDQstCwLCDQn9C-0LvRgtCw0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMzYwMDA!5e1!3m2!1sru!2sua!4v1676567345783!5m2!1sru!2sua"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<section class="homepage-section4">
+  <div class="container-section4">
+    <h1 class="section4-logo">MIMIHO</h1>
+    <h2 class="section4-post-title">Готель</h2>
+    <p class="section4-description">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit.
+    </p>
+
+    <div class="section4-wrap">
+      <div class="section4-btn-group">
+        <button type="button" class="homepage-section4-btn" data-price-open-two>Забронювати номер</button>
+        <form action="https://vitalik1788.github.io/teamProject-group14/hotel.html">        
+        <button class="homepage-section4-btn">Переглянути ціни</button> 
+        </form>       
+      </div>
+
+      <ul class="section4-img-list">
+        <li class="section4-img-item left">
+          <img srcset="./img/section4-img/section4-foto1@2x.jpg 2x" src="./img/section4-img/section4-foto1.jpg"
+            alt="food" class="section4-foto1" width="270" height="270" />
+        </li>
+        <li class="section4-img-item center">
+          <img srcset="./img/section4-img/section4-foto2@2x.jpg 2x" src="./img/section4-img/section4-foto2.jpg"
+            alt="food" class="section4-foto2" width="162" height="270" />
+        </li>
+        <li class="section4-img-item right">
+          <img srcset="./img/section4-img/section4-foto3@2x.jpg 2x" src="./img/section4-img/section4-foto3.jpg"
+            alt="food" class="section4-foto3" width="162" height="270" />
+        </li>
+      </ul>
+    </div>
+    <div class="section4-arrows-group">
+      <button type="button" class="slider-section4-btn">
+        <svg class="section4-arrow-icon" width="32" height="32">
+          <use href="./img/icons-sprite.svg#icon-left-arrow-slider"></use>
+        </svg>
+      </button>
+      <button type="button" class="slider-section4-btn">
+        <svg class="section4-arrow-icon" width="32" height="32">
+          <use href="./img/icons-sprite.svg#icon-rigth-arrow-slider"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- MODAL WINDOW  -->
+
+<div class="backdrop is-hidden" data-price-two>
+  <div class="tt-modal">
+    <button type="button" class="modal-close" data-price-close-two>
+      <svg class="close-modal-icon" width="24" height="24">
+        <use href="./img/icons-sprite.svg#icon-cross-close-modal"></use>
+      </svg>
+    </button>
+
+    <div class="tt-modal-title-wrap">
+      <h1 class="tt-modal-title">
+        ЗАБРОНЮВАТИ НОМЕР
+      </h1>
+    </div>
+
+    <form class="tt-modal-form">
+
+      <div class="tr-input-wrap">
+        <div class="tr-input-wrap-one">
+          <div class="tr-modal-input-field">
+            <input type="text" class="tt-modal-input" name="name" id="r-name" required placeholder="Ваше ім’я"
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space.">
+            <label for="r-name" class="tt-input-label-title">
+              На кого забронювати номер?
+            </label>
+          </div>
+          <div class="tr-modal-input-field">
+            <input type="tel" class="tt-modal-input" name="tel" id="r-tel" required placeholder="+38 (___) ___-__-__"
+              pattern="[0-9]+" title="please enter number only">
+            <label for="r-tel" class="tt-input-label-title">
+              Номер телефону
+            </label>
+          </div>
+        </div>
+
+        <div class="tr-input-wrap-two">
+          <div class="tr-modal-input-field">
+            <select id="r-person" name="person" class="tt-modal-input">
+              <option value="2" class="value" selected>
+                Двомісний люкс
+              </option>
+              <option value="3" class="value">
+                Тримісний люкс
+              </option>
+            </select>
+            <label for="r-person" class="tt-input-label-title">
+              Категорія номеру
+            </label>
+          </div>
+        </div>
+
+        <div class="tr-input-wrap-three">
+          <div class="tr-modal-input-field">
+            <select id="tr-date" name="tt-date" class="tt-modal-input">
+              <option value="today" class="value" selected>
+                Сьогодні
+              </option>
+            </select>
+            <label for="tr-date" class="tt-input-label-title">
+              Дата заїзду
+            </label>
+          </div>
+          <div class="tr-modal-input-field">
+            <select id="rr-date" name="tt-date" class="tt-modal-input">
+              <option value="today" class="value" selected>
+                Сьогодні
+              </option>
+            </select>
+            <label for="rr-date" class="tt-input-label-title">
+              Дата виїзду
+            </label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="tt-modal-button">
+        ОФОРМИТИ БРОНЮВАННЯ
+      </button>
+    </form>
+  </div>
+</div>

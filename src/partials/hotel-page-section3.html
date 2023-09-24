@@ -1,0 +1,122 @@
+<section class="hotelpage-section1">
+    <div class="container-hotelpage">
+      <div class="hotelpage-top-wrap">
+        <h2 class="hotel-pre-title">Amet minim mollit non</h2>
+        <h2 class="hotel-logo">MIMIHO</h2>
+  
+        <h2 class="hotel-title">ДВОМІСНИЙ НОМЕР</h2>
+        <p class="hotel-post-title">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <img
+          srcset="./img/add-foto-room/change-foto1-section3-hotel@2x.jpg 2x"
+          src="./img/add-foto-room/change-foto1-section3-hotel.jpg"
+          alt="room"
+          class="hotel-foto1"
+          width="244"
+          height="322"
+        />
+      </div>
+  
+      <div class="hotelpage-bottom-wrap">
+        <ul class="hotelpage-img-list">
+          <li class="hotelpage-img-item">
+            <img
+              srcset="./img/add-foto-room/change-foto2-section3-hotel@2x.jpg 2x"
+              src="./img/add-foto-room/change-foto2-section3-hotel.jpg"
+              alt="wash basin"
+              class="hotel-foto2"
+              width="194" height="194"
+            />
+          </li>
+          <li class="hotelpage-img-item">
+            <img
+              srcset="./img/add-foto-room/change-foto3-section3-hotel@2x.jpg 2x"
+              src="./img/add-foto-room/change-foto3-section3-hotel.jpg"
+              alt="cup of coffee on table"
+              class="hotel-foto3"
+              width="194" height="194"
+            />
+          </li>
+        </ul>
+        <div class="hotelpage-btn-group">
+          <form action="https://vitalik1788.github.io/teamProject-group14/room.html">
+            <button class="hotelpage-btn">Детальніше</button>
+          </form>  
+          <button type="button" class="hotelpage-btn" data-price-open-third>Переглянути ціни</button>
+        </div>
+  
+        <div class="hotelpage-arrows">
+          <button type="button" class="hotelpage-sliger-btn">
+            <svg class="hotelpage-arrow-icon" width="32" height="32">
+              <use href="./img/icons-sprite.svg#icon-left-arrow-slider"></use>
+            </svg>
+          </button>
+          <button type="button" class="hotelpage-sliger-btn">
+            <svg class="hotelpage-arrow-icon" width="32" height="32">
+              <use href="./img/icons-sprite.svg#icon-rigth-arrow-slider"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- MODAL WINDOW ROOM PRICE -->
+
+  <div class="backdrop is-hidden" data-price-third>
+    <div class="tt-modal">
+  
+      <button type="button" class="modal-close" data-price-close-third>
+        <svg class="close-modal-icon" width="24" height="24">
+          <use href="./img/icons-sprite.svg#icon-cross-close-modal"></use>
+        </svg>
+      </button>
+  
+      <div class="tt-modal-title-wrap">
+        <h1 class="tt-modal-title">
+          ЦІНИ НА НОМЕР
+        </h1>
+      </div>
+  
+      <div class="tp-modal-title-wrap">
+        <p class="tp-modal-title">ДВОМІСНИЙ НОМЕР</p>
+      </div>
+  
+      <div class="tp-modal-title-price">
+        <p class="tp-modal-price">Категорія номеру</p>
+      </div>
+  
+      <form class="tt-modal-form">
+        <div class="tp-input-wrap">
+          <div class="tp-modal-input-field">
+            <select id="night" name="night" class="tt-modal-input">
+              <option value="1" class="value" selected>2</option>
+              <option value="2" class="value">3</option>
+              <option value="3" class="value">4</option>
+              <option value="4" class="value">5</option>
+            </select>
+            <label for="night" class="tt-input-label-title">
+              Кількість ночей
+            </label>
+          </div>
+          <div class="tp-modal-input-field">
+            <select id="price" name="tt-date" class="tt-modal-input">
+              <option value="today" class="value" selected>
+                1200
+              </option>
+            </select>
+            <label for="price" class="tt-input-label-title">
+              грн
+            </label>
+          </div>
+        </div>
+  
+        <button type="submit" class="tt-modal-button">
+          ЗАБРОНЮВАТИ НОМЕР
+        </button>
+      </form>
+    </div>
+  </div>

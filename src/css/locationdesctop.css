@@ -1,0 +1,85 @@
+@media screen and (min-width:1280px) {
+
+    .location-container {
+        width: 1140px;
+
+    }
+}
+
+
+@media screen and (min-width:1280px) {
+    .location {
+
+        background-color: #FFFDEE;
+        padding-top: 64px;
+        padding-bottom: 74px;
+    }
+}
+
+
+@media screen and (min-width:1280px) {
+    .location-sentense {
+
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #7A7A7A;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .location-mimino {
+        margin-bottom: 16px;
+
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .iframe {
+
+        width: 634px;
+        height: 412px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .location-sentense {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    .location-hotel-div {
+        background-color: #FFFFFF;
+        border: 0.5px solid #F3C653;
+        border-radius: 2px;
+        padding-top: 9px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        padding-right: 8px;
+        display: flex;
+        align-items: center;
+        width: 270px;
+        margin-bottom: 48px;
+        justify-content: center;
+
+
+    }
+}
+
+.location-visually-hidden {
+    position: absolute ;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 ;
+    border: 0 ;
+    height: 1px ;
+    width: 1px ;
+    overflow: hidden;
+}

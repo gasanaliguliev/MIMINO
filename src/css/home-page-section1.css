@@ -1,0 +1,286 @@
+
+
+.homepage-section1 {
+  width: 100vw;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  background-color: #fffdee;
+  
+}
+
+.container-section1 {
+  width: 414px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; 
+  
+
+}
+
+.section1-top-wrap {
+  margin-bottom: 32px;
+}
+.section1-pre-title {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+
+  margin-bottom: 6px;
+
+  color: #b4b4b4;
+}
+.section1-logo {
+  display: block;
+  margin-bottom: 16px;
+
+  font-family: 'Film P3';
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+
+  color: #494848;
+}
+.section1-description {
+  width: 242px;
+  margin-right: auto;
+  margin-bottom: 28px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: #7a7a7a;
+}
+
+.section1-foto1 {
+  margin-left: auto;
+}
+
+.wrap-group1-section1 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 21px;
+
+  margin-bottom: 32px;
+}
+.section1-description2 {
+  width: 163px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: #c79002;
+}
+.wrap-group2-section1 {
+  margin-bottom: 20px;
+}
+.section1-image-list {
+  position: relative;
+  left: 84px;
+
+  display: flex;
+  gap: 20px;
+}
+.section1-image-item {
+  width: 245px;
+}
+
+.section1-arrows {
+  position: static;
+  justify-content: end;  
+
+  display: flex;
+  gap: 32px;
+
+}
+.section1-button {
+  width: 32px;
+  height: 32px;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.section1-foto1,
+.section1-foto2,
+.section1-foto3,
+.section1-foto4 {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 413px) {
+  .container-section1 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .class-overflow {
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-section1 {
+    width: 960px;
+  }
+
+  .homepage-section1 {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+
+  .section1-top-wrap {
+    position: relative;
+    padding-bottom: 142px;
+
+    margin-bottom: 0;
+  }
+
+  .section1-pre-title {
+    width: 307px;
+
+    font-size: 32px;
+    line-height: 1.15;
+
+    margin-bottom: 4px;
+  }
+
+  .section1-logo {
+    width: 204px;
+
+    font-size: 64px;
+    line-height: 1.08;
+
+    margin-bottom: 24px;
+  }
+
+  .section1-description {
+    width: 419px;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin-bottom: 0;
+  }
+
+  .section1-foto1 {
+    width: 400px;
+    height: 524px;
+    position: absolute;
+    bottom: -12px;
+    right: 65px;
+    z-index: 999;
+  }
+
+  .wrap-group1-section1 {
+    position: relative;
+    gap: 48px;
+  }
+
+  .section1-description2 {
+    position: relative;
+    right: 200px;
+    width: 312px;
+    font-size: 16px;
+    line-height: 1.5;
+
+    padding-top: 148px;
+    padding-bottom: 154px;
+  }
+
+  .section1-foto2 {
+    position: absolute;
+    left: 0;
+    top: -48px;
+
+    width: 350px;
+    height: 500px;
+  }
+
+  .wrap-group1-section1 {
+    margin-bottom: 0;
+  }
+
+  .wrap-group2-section1 {
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .section1-image-list {
+    top: -16px;
+    right: 0;
+    justify-content: flex-end;
+
+    gap: 40px;
+  }
+
+  .section1-arrows {
+    left: 0;
+    justify-content: flex-end;
+  }
+
+  .section1-foto1,
+  .section1-foto2,
+  .section1-foto3,
+  .section1-foto4 {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-section1 {
+    width: 1140px;
+  }
+
+  .homepage-section1 {
+    padding-bottom: 50px;
+  }
+
+  .section1-foto1 {
+    width: 400px;
+    height: 571px;
+    left: 585px;
+    margin-left: 0; 
+    bottom: -56px;
+    transform: translateX(-10%);
+  }
+
+  .section1-foto2 {
+    top: -24px;
+  }
+
+  .section1-description2 {
+    right: 379px;
+    padding-bottom: 101px;
+  }
+
+  .section1-image-list {
+    gap: 40px;
+    padding-right: 80px;
+  }
+
+  .section1-image-item {
+    width: 254px;
+    height: 254px;
+  }
+
+  .section1-foto3,
+  .section1-foto4 {
+    width: 254px;
+    height: 254px;
+  }
+}
